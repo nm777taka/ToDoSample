@@ -74,8 +74,15 @@
         // Entityの削除
 		TDTodo *object = [self.todoObjects objectAtIndex:indexPath.row];
 		[object MR_deleteEntity];
-		self.todoObjects = [self fetchTodoObjects];
-		[tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+		NSManagedObjectContext *context = [NSManagedObjectContext MR_defaultContext];
+		[context MR_saveToPersistentStoreWithCompletion:^(BOOL success, NSError *error) {
+			if (!success) {
+				NSLog(@"save error: %@", error);
+			}
+			
+			self.todoObjects = [self fetchTodoObjects];
+			[tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+		}];
     }   
 }
 
