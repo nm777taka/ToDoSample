@@ -178,7 +178,7 @@
             </objects>
             <point key="canvasLocation" x="1332" y="64"/>
         </scene>
-        <!--Insert View Controller - 新しいToDoを追加-->
+        <!--Insert View Controller - 新しいToDo-->
         <scene sceneID="As0-c1-foM">
             <objects>
                 <viewController id="P38-ok-RdY" customClass="TDInsertViewController" sceneMemberID="viewController">
@@ -225,7 +225,7 @@
                             <constraint firstItem="Q1U-pq-E3E" firstAttribute="leading" secondItem="TCE-PX-FtF" secondAttribute="leading" type="default" id="zKT-Zp-zq7"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="新しいToDoを追加" id="irJ-DC-Nwn">
+                    <navigationItem key="navigationItem" title="新しいToDo" id="irJ-DC-Nwn">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="gjS-pV-bFl">
                             <connections>
                                 <action selector="pushedDoneButton:" destination="P38-ok-RdY" id="VLP-Te-Fqp"/>
