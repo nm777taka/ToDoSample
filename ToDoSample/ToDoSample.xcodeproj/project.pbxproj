@@ -21,6 +21,8 @@
 		472F024D17CE4BC60008912D /* ToDoSample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 472F024B17CE4BC60008912D /* ToDoSample.xcdatamodeld */; };
 		472F025017CE4BC60008912D /* TDMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472F024F17CE4BC60008912D /* TDMasterViewController.m */; };
 		472F025317CE4BC60008912D /* TDDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472F025217CE4BC60008912D /* TDDetailViewController.m */; };
+		472F025E17CE50A70008912D /* _Todo.m in Sources */ = {isa = PBXBuildFile; fileRef = 472F025B17CE50A70008912D /* _Todo.m */; };
+		472F025F17CE50A70008912D /* Todo.m in Sources */ = {isa = PBXBuildFile; fileRef = 472F025D17CE50A70008912D /* Todo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,10 @@
 		472F024F17CE4BC60008912D /* TDMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDMasterViewController.m; sourceTree = "<group>"; };
 		472F025117CE4BC60008912D /* TDDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDDetailViewController.h; sourceTree = "<group>"; };
 		472F025217CE4BC60008912D /* TDDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDDetailViewController.m; sourceTree = "<group>"; };
+		472F025A17CE50A70008912D /* _Todo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Todo.h; sourceTree = "<group>"; };
+		472F025B17CE50A70008912D /* _Todo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Todo.m; sourceTree = "<group>"; };
+		472F025C17CE50A70008912D /* Todo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Todo.h; sourceTree = "<group>"; };
+		472F025D17CE50A70008912D /* Todo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Todo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,7 @@
 		472F023617CE4BC60008912D /* ToDoSample */ = {
 			isa = PBXGroup;
 			children = (
+				472F025917CE50A70008912D /* Models */,
 				472F023F17CE4BC60008912D /* TDAppDelegate.h */,
 				472F024017CE4BC60008912D /* TDAppDelegate.m */,
 				472F024817CE4BC60008912D /* MainStoryboard.storyboard */,
@@ -117,6 +124,17 @@
 				472F024617CE4BC60008912D /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		472F025917CE50A70008912D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				472F025A17CE50A70008912D /* _Todo.h */,
+				472F025B17CE50A70008912D /* _Todo.m */,
+				472F025C17CE50A70008912D /* Todo.h */,
+				472F025D17CE50A70008912D /* Todo.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +209,8 @@
 				472F024D17CE4BC60008912D /* ToDoSample.xcdatamodeld in Sources */,
 				472F025017CE4BC60008912D /* TDMasterViewController.m in Sources */,
 				472F025317CE4BC60008912D /* TDDetailViewController.m in Sources */,
+				472F025E17CE50A70008912D /* _Todo.m in Sources */,
+				472F025F17CE50A70008912D /* Todo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
