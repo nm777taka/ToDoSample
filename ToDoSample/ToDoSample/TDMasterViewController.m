@@ -15,6 +15,7 @@
 @interface TDMasterViewController ()
 
 @property NSArray *todoObjects;
+@property NSInteger selectedRow;
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 @end
@@ -55,6 +56,12 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	self.selectedRow = indexPath.row;
+	[self performSegueWithIdentifier:@"GotoDetailView" sender:self];
+}
+
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the specified item to be editable.
@@ -90,10 +97,9 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"showDetail"]) {
-		//        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-		//        NSManagedObject *object = [[self fetchedResultsController] objectAtIndexPath:indexPath];
-		//        [[segue destinationViewController] setDetailItem:object];
+    if ([[segue identifier] isEqualToString:@"GotoDetailView"]) {
+		TDDetailViewController *viewController = [segue destinationViewController];
+		viewController.todoObject = [self.todoObjects objectAtIndex:self.selectedRow];
     }
 }
 
