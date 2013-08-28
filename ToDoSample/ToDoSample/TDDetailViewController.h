@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+#import "TDTodo.h"
+
+
 @interface TDDetailViewController : UIViewController
 
-@property (strong, nonatomic) id detailItem;
+@property TDTodo *todoObject;
 
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 @end

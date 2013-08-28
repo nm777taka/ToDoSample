@@ -1,5 +1,5 @@
 //
-//  TDMasterViewController.h
+//  TDInsertViewController.h
 //  ToDoSample
 //
 //  Created by 石井 晃 on 13/08/29.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TDMasterViewController : UITableViewController
+@interface TDInsertViewController : UIViewController
 
 @end

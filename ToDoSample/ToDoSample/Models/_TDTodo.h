@@ -5,9 +5,9 @@
 
 
 extern const struct TDTodoAttributes {
-	 NSString *text;
-	 NSString *timeStamp;
-	 NSString *title;
+	__unsafe_unretained NSString *text;
+	__unsafe_unretained NSString *timeStamp;
+	__unsafe_unretained NSString *title;
 } TDTodoAttributes;
 
 extern const struct TDTodoRelationships {
@@ -33,7 +33,7 @@ extern const struct TDTodoFetchedProperties {
 
 
 
-@property (nonatomic, retain) NSString* text;
+@property (nonatomic, strong) NSString* text;
 
 
 //- (BOOL)validateText:(id*)value_ error:(NSError**)error_;
@@ -41,7 +41,7 @@ extern const struct TDTodoFetchedProperties {
 
 
 
-@property (nonatomic, retain) NSDate* timeStamp;
+@property (nonatomic, strong) NSDate* timeStamp;
 
 
 //- (BOOL)validateTimeStamp:(id*)value_ error:(NSError**)error_;
@@ -49,7 +49,7 @@ extern const struct TDTodoFetchedProperties {
 
 
 
-@property (nonatomic, retain) NSString* title;
+@property (nonatomic, strong) NSString* title;
 
 
 //- (BOOL)validateTitle:(id*)value_ error:(NSError**)error_;

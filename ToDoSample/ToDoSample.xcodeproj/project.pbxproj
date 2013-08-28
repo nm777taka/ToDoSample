@@ -23,6 +23,8 @@
 		472F025317CE4BC60008912D /* TDDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472F025217CE4BC60008912D /* TDDetailViewController.m */; };
 		472F026517CE54660008912D /* _TDTodo.m in Sources */ = {isa = PBXBuildFile; fileRef = 472F026117CE54660008912D /* _TDTodo.m */; };
 		472F026617CE54660008912D /* TDTodo.m in Sources */ = {isa = PBXBuildFile; fileRef = 472F026217CE54660008912D /* TDTodo.m */; };
+		472F026917CE5E2C0008912D /* TDInsertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472F026817CE5E2C0008912D /* TDInsertViewController.m */; };
+		472F026B17CE5F080008912D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 472F026A17CE5F080008912D /* QuartzCore.framework */; };
 		CAA8ED79549E4162B6260193 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51989B6BB6E74DAD8050339A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,9 @@
 		472F026217CE54660008912D /* TDTodo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDTodo.m; sourceTree = "<group>"; };
 		472F026317CE54660008912D /* _TDTodo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _TDTodo.h; sourceTree = "<group>"; };
 		472F026417CE54660008912D /* TDTodo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDTodo.h; sourceTree = "<group>"; };
+		472F026717CE5E2C0008912D /* TDInsertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TDInsertViewController.h; path = ToDoSample/TDInsertViewController.h; sourceTree = SOURCE_ROOT; };
+		472F026817CE5E2C0008912D /* TDInsertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TDInsertViewController.m; path = ToDoSample/TDInsertViewController.m; sourceTree = SOURCE_ROOT; };
+		472F026A17CE5F080008912D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		51989B6BB6E74DAD8050339A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				472F026B17CE5F080008912D /* QuartzCore.framework in Frameworks */,
 				472F022F17CE4BC60008912D /* UIKit.framework in Frameworks */,
 				472F023117CE4BC60008912D /* Foundation.framework in Frameworks */,
 				472F023317CE4BC60008912D /* CoreGraphics.framework in Frameworks */,
@@ -92,6 +98,7 @@
 		472F022D17CE4BC60008912D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				472F026A17CE5F080008912D /* QuartzCore.framework */,
 				472F022E17CE4BC60008912D /* UIKit.framework */,
 				472F023017CE4BC60008912D /* Foundation.framework */,
 				472F023217CE4BC60008912D /* CoreGraphics.framework */,
@@ -147,6 +154,8 @@
 				472F024F17CE4BC60008912D /* TDMasterViewController.m */,
 				472F025117CE4BC60008912D /* TDDetailViewController.h */,
 				472F025217CE4BC60008912D /* TDDetailViewController.m */,
+				472F026717CE5E2C0008912D /* TDInsertViewController.h */,
+				472F026817CE5E2C0008912D /* TDInsertViewController.m */,
 			);
 			name = View;
 			path = Models;
@@ -261,6 +270,7 @@
 				472F025317CE4BC60008912D /* TDDetailViewController.m in Sources */,
 				472F026517CE54660008912D /* _TDTodo.m in Sources */,
 				472F026617CE54660008912D /* TDTodo.m in Sources */,
+				472F026917CE5E2C0008912D /* TDInsertViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
