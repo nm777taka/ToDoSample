@@ -1,24 +1,24 @@
 // DO NOT EDIT. This file is machine-generated and constantly overwritten.
-// Make changes to Todo.m instead.
+// Make changes to TDTodo.m instead.
 
-#import "_Todo.h"
+#import "_TDTodo.h"
 
-const struct TodoAttributes TodoAttributes = {
+const struct TDTodoAttributes TDTodoAttributes = {
 	.text = @"text",
 	.timeStamp = @"timeStamp",
 	.title = @"title",
 };
 
-const struct TodoRelationships TodoRelationships = {
+const struct TDTodoRelationships TDTodoRelationships = {
 };
 
-const struct TodoFetchedProperties TodoFetchedProperties = {
+const struct TDTodoFetchedProperties TDTodoFetchedProperties = {
 };
 
-@implementation TodoID
+@implementation TDTodoID
 @end
 
-@implementation _Todo
+@implementation _TDTodo
 
 + (id)insertInManagedObjectContext:(NSManagedObjectContext*)moc_ {
 	NSParameterAssert(moc_);
@@ -34,8 +34,8 @@ const struct TodoFetchedProperties TodoFetchedProperties = {
 	return [NSEntityDescription entityForName:@"Todo" inManagedObjectContext:moc_];
 }
 
-- (TodoID*)objectID {
-	return (TodoID*)[super objectID];
+- (TDTodoID*)objectID {
+	return (TDTodoID*)[super objectID];
 }
 
 + (NSSet *)keyPathsForValuesAffectingValueForKey:(NSString *)key {

@@ -1,34 +1,34 @@
 // DO NOT EDIT. This file is machine-generated and constantly overwritten.
-// Make changes to Todo.h instead.
+// Make changes to TDTodo.h instead.
 
 #import <CoreData/CoreData.h>
 
 
-extern const struct TodoAttributes {
+extern const struct TDTodoAttributes {
 	 NSString *text;
 	 NSString *timeStamp;
 	 NSString *title;
-} TodoAttributes;
+} TDTodoAttributes;
 
-extern const struct TodoRelationships {
-} TodoRelationships;
+extern const struct TDTodoRelationships {
+} TDTodoRelationships;
 
-extern const struct TodoFetchedProperties {
-} TodoFetchedProperties;
-
-
+extern const struct TDTodoFetchedProperties {
+} TDTodoFetchedProperties;
 
 
 
 
-@interface TodoID : NSManagedObjectID {}
+
+
+@interface TDTodoID : NSManagedObjectID {}
 @end
 
-@interface _Todo : NSManagedObject {}
+@interface _TDTodo : NSManagedObject {}
 + (id)insertInManagedObjectContext:(NSManagedObjectContext*)moc_;
 + (NSString*)entityName;
 + (NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_;
-- (TodoID*)objectID;
+- (TDTodoID*)objectID;
 
 
 
@@ -61,11 +61,11 @@ extern const struct TodoFetchedProperties {
 
 @end
 
-@interface _Todo (CoreDataGeneratedAccessors)
+@interface _TDTodo (CoreDataGeneratedAccessors)
 
 @end
 
-@interface _Todo (CoreDataGeneratedPrimitiveAccessors)
+@interface _TDTodo (CoreDataGeneratedPrimitiveAccessors)
 
 
 - (NSString*)primitiveText;

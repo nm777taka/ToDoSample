@@ -18,6 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+	[MagicalRecord setupCoreDataStackWithStoreNamed:@"ToDoSample.sqlite"];
+    // CoreDataのManagedObject Contextを設定する。
+    NSManagedObjectContext *context = [NSManagedObjectContext MR_defaultContext];
+	
     // Override point for customization after application launch.
 	UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
 	TDMasterViewController *controller = (TDMasterViewController *)navigationController.topViewController;
