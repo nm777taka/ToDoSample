@@ -8,6 +8,8 @@
 
 #import "TDDetailViewController.h"
 
+#import <QuartzCore/QuartzCore.h>
+
 #import "TDEditViewController.h"
 
 
@@ -36,6 +38,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+	
+	self.textView.layer.borderColor = [UIColor blackColor].CGColor;
+	self.textView.layer.borderWidth = 2.0f;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
 	self.titleLabel.text = self.todoObject.title;
 	self.textView.text = self.todoObject.text;
 }
