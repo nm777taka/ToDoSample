@@ -25,6 +25,7 @@
 
 #pragma mark - Action
 
+// データベース内に記録されているToDoのEntityをtimeStampでソートしたNSArrayを返す（日付が新しいものほど前）
 - (NSArray *)fetchTodoObjects
 {
 	return [TDTodo MR_findAllSortedBy:@"timeStamp" ascending:NO];
@@ -41,6 +42,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
+	// セクションは常に1つなので1でハードコーディング
 	return 1;
 }
 
